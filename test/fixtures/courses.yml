@@ -3,9 +3,9 @@
 one:
   name: MyString
   sched: MyString
-  prof_id: 1
+  professor_id: 1
 
 two:
   name: MyString
   sched: MyString
-  prof_id: 1
+  professor_id: 1

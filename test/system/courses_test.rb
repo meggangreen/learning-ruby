@@ -15,7 +15,7 @@ class CoursesTest < ApplicationSystemTestCase
     click_on "New Course"
 
     fill_in "Name", with: @course.name
-    fill_in "Prof", with: @course.prof_id
+    fill_in "Prof", with: @course.professor_id
     fill_in "Sched", with: @course.sched
     click_on "Create Course"
 
@@ -28,7 +28,7 @@ class CoursesTest < ApplicationSystemTestCase
     click_on "Edit", match: :first
 
     fill_in "Name", with: @course.name
-    fill_in "Prof", with: @course.prof_id
+    fill_in "Prof", with: @course.professor_id
     fill_in "Sched", with: @course.sched
     click_on "Update Course"
 

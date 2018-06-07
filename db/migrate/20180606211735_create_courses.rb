@@ -3,7 +3,7 @@ class CreateCourses < ActiveRecord::Migration[5.2]
     create_table :courses do |t|
       t.string :name
       t.string :sched
-      t.integer :prof_id
+      t.integer :professor_id
 
       t.timestamps
     end
