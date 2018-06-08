@@ -35,7 +35,7 @@ class EnrollmentsControllerTest < ActionDispatch::IntegrationTest
 
   test "should update enrollment" do
     patch enrollment_url(@enrollment), params: { enrollment: { course_id: @enrollment.course_id, student_id: @enrollment.student_id } }
-    assert_redirected_to enrollment_url(@enrollment)
+    assert_response :success
   end
 
   test "should destroy enrollment" do

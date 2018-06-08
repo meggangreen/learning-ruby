@@ -35,7 +35,7 @@ class CoursesControllerTest < ActionDispatch::IntegrationTest
 
   test "should update course" do
     patch course_url(@course), params: { course: { name: @course.name, professor_id: @course.professor_id, sched: @course.sched } }
-    assert_redirected_to course_url(@course)
+    assert_response :success
   end
 
   test "should destroy course" do
